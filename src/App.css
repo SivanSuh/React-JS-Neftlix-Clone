@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+  border:none;
+  outline:none;
+}
+.container{
+  background-image: url("./images/netflix.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container::after{
+  content: "";
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 100px 250px #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+}
+.logo{
+  width: 108px;
+  height:32px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 50px auto;
+  width: 60%;
+  transform: translateY(50%);
+  position: relative;
+  transform: translateY(0);
+  z-index: 100;
+}
+
+.wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+
+  z-index: 10;
+}
+.select{
+  padding: 8px 22px;
+  background-color: #00000066;
+  color: white;
+  border:1px solid white;
+  border-radius: 5px;
+}
+.option{
+  color: white;
+}
+.btn-sign{
+  margin:0 30px;
+  padding: 7px 17px;
+  background-color: red;
+  outline: none;
+  border:none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+.search{
+  margin: 15px 0 20px 0;
+  width: calc(100% - 100px);
+  display: flex;
+}
+.input{
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+.btn{
+  padding:0 26px;
+  background-color: #F40612;
+  color: white;
+  width: 165px;
+  height: 60px;
+  border:none;
+  outline: none;
+  font-size: 20px;
+}
+.section{
+  width: 100%;
+  background-color: black;
+  color:white;
+  border-top:8px solid #222222;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-bottom:8px solid #222222;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.image-pict{
+  width: 450px;
+  height: 349px;
+}
+
+/* Sign in*/
+
+.sign-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000BF;
+  width: 450px;
+  margin: 10px auto;
+  height: 550px;
+  position: relative;
+  color: white;
+  z-index: 1584;
+}
+
+.input-sign-in{
+  width: 314px;
+  height: 50px;
+  background: #333;
+  padding: 16px 20px 0;
+  font-size: 16px;
+  margin: 15px auto;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn-sign-in{
+  background-color: #E50914;
+  color: white;
+  width: 314px;
+  height: 48px;
+  margin: 20px auto;
+  border: none;
+  font-size: 20px;
+  outline:none;
+}
+
+.check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Back to home*/
+
+.backtohome{
+  padding: 5px 10px;
+  background-color: purple;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.backtohome:hover{
+  transform: scale(0.9);
+}
+
+/* Accordion Menu*/
+.accordion-menu-dash{
+  margin:50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.accordion{
+  text-align:center;
+  width: 900px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+.btn-accordion{
+  width: 100%;
+  padding: 20px;
+  background-color: #303030;
+  color: white;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.ul{
+  width: 100%
+}
+.li{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  width: 100%;
+}
+.info{
+  background-color: #303030;
+}
+/*Footer*/
+.footer{
+  margin: 50px auto;
+  color: #757575;
+}
+.tel{
+  color: #757575;
+}
+.tel:hover{
+  text-decoration: underline;
+}
+.blok{
+  display: flex;
+}
+.blok_col{
+  margin: 10px 20px;
+}
+.p{
+  color: #757575;
+}
+.p:hover{
+  text-decoration: underline;
+}
+/*Media query Responsive*/
+@media (max-width:992px){
+  .accordion{
+    width: 700px;
+  }
+  .menu{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:765px){
+  body{
+    font-size: 18px;
+  }
+  .accordion{
+    width: 500px;
+  }
+}
